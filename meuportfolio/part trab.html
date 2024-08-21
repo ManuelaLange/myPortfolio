@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meu portfólio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <style>
+        body{
+            background-image: linear-gradient(105deg,black, rgba(70, 73, 136, 1))
+        }
+        .iconNav{
+            width: 2.4rem;
+        }
+        
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 64px;
+            margin-right: 64px;
+            align-items: center;                       
+        }
+
+        .subTitleNav{
+            display: flex;
+            flex-direction: row;            
+        }
+
+        ul{
+          list-style:none;
+          display: flex;
+          flex-direction: row;
+          padding: 0rem; 
+          text-decoration-style:none;
+          color:white,
+        }
+
+        .navLiMenu{
+            color: white; 
+            text-decoration:none
+
+        }
+
+        li{
+            margin-right: 2rem;            
+        }
+
+        .iconNav{
+            margin-left: 1rem;
+            filter: grayscale(2);
+        }
+
+        .line{
+            border:solid, 1px, white;
+        }        
+
+    </style>
+    <body>
+        <nav>
+            <div class="subTitleNav">
+                <ul>
+                    <li><a class="navLiMenu" href="#sobremim">Sobre mim</a></li>
+                    <li><a class="navLiMenu" href="#curriculo">Currículo</a></li>
+                    <li><a class="navLiMenu" href="#cursos">Cursos</a></li>
+                    <li><a class="navLiMenu" href="#meusProjetos">Meus projetos</a></li>
+                    <li><a class="navLiMenu" href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+            <div class="listIconNav">
+                <img class="iconNav" src="/img/github-logo.png" href="https://www.flaticon.com/br/icones-gratis/github" >
+                <img class="iconNav" href="iconNav" src="/img/logotipo-do-linkedin.png" href="//www.flaticon.com/br/icones-gratis/linkedin">
+            </div>
+        </nav>
+        <div class="line"></div> 
+
+    </body>
+</html>
