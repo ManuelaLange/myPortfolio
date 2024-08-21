@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Meu portfólio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+    <style>
+        html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        }
+        
+        body{
+            height: 100%;            
+            background-image: linear-gradient(135deg, black, rgba(70, 73, 136, 1))
+        }        
+        
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-left: 64px;
+            margin-right: 64px;
+            align-items: center;
+            padding-top: 0.3rem;                                             
+        }
+
+        ul{
+          list-style:none;
+          display: flex;
+          padding: 0rem; 
+          text-decoration-style:none;
+          color:white,
+        }
+
+        .navLiMenu{
+            color: white; 
+            text-decoration:none;
+            margin-right: 2rem; 
+
+        }
+        .iconNav{
+            width: 2.5rem;
+            margin-left: 0.5rem;
+            cursor: pointer;            
+        }
+
+        .line{
+            border:solid, 1px, white;
+        }  
+        .divAbout{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 64px;
+            margin-right: 64px;
+            margin-top: 146px;
+            justify-content: space-between;
+            padding: 0%;
+        }
+        .ImgProfile{
+            width: 19rem;
+            border-radius: 100%;
+        }     
+        .divTextAbout{
+            width: 54rem;
+            color: rgb(243, 233, 233);
+            
+        }
+        .curriculumTitle{
+            text-align: center;
+            color: white;
+        }
+        .subLine{
+            border:solid, 1px, white;
+            width: 70%;
+            }
+        
+        .divCurriculumText{
+            display: flex; 
+            flex-direction: row;
+            align-content: space-around;
+        }
+    
+
+    </style>
+    <body>
+        <nav>
+            <div class="subTitleNav">
+                <ul>
+                    <li><a class="navLiMenu" href="#about">Sobre mim</a></li>
+                    <li><a class="navLiMenu" href="#curriculum">Currículo</a></li>
+                    <li><a class="navLiMenu" href="#cursos">Cursos</a></li>
+                    <li><a class="navLiMenu" href="#meusProjetos">Meus projetos</a></li>
+                    <li><a class="navLiMenu" href="#habilidades">Habilidades</a></li>
+                </ul>
+            </div>
+            <div class="listIconNav">
+                <img  class="iconNav" src="/img/mdi_github.png" >
+                <img class="iconNav"  src="/img/mdi_linkedin.png" >
+            </div>
+        </nav>
+        <div class="line"></div> 
+        <div id="about" class ="divAbout" >
+            <div class="divTextAbout">
+                <img class="iconAbout"src="/img/fluent_window-dev-edit-16-filled.png">
+                <h3 class="titleAbout">Seja bem vindo(a) ao meu portfólio</h3>
+                <p class="textAbout">Me chamo Manuela, tenho 26 anos formada em administração Pública e atualmente estou fazendo uma transição de carreira para a área de tecnologia. <br>Nessa página você vai conhecer um pouco mais sobre  minha caminhada profissional, minhas habilidades e os cursos que realizei ao longo desses anos.<br>
+                    <br>
+                    Mas nada se compara com uma conversa one-on-one, então fique a vontade para me chamar nas redes sociais.</p>
+            </div>
+            <div class="divAboutImg">
+                <img class="ImgProfile" src="/img/DSDSADSAD.jpeg">
+            </div>
+        </div>
+        <h2 class="curriculumTitle" id="curriculum">Currículo</h2>
+        <div class="divCurriculum">
+            <div class="subLine"></div>
+            <div class="divCurriculumText">
+                <h5 class="subTitleCurriculum">Analista de planejamento estratégico</h5>
+                <p style="background-color: rgba(238, 238, 238, 1);padding:3px; border-radius: 5%;"><strong>Atualmente</strong></p>
+            </div>
+            <div>
+                <img src="">
+                <p>data</p>
+            </div>
+            <div>
+                <p></p>
+                <p></p>
+            </div>
+            
+
+        </div>
+    </body>
+</html>
