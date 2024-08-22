@@ -4,27 +4,26 @@
         <title>Meu portfólio</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     </head>
     <style>
         html, body {
-        height: 100%;
         margin: 0;
         padding: 0;
-        }
-        
-        body{
-            height: 100%;            
-            background-image: linear-gradient(135deg, black, rgba(70, 73, 136, 1))
-        }        
+        background-image: linear-gradient(135deg, black, rgba(70, 73, 136, 1));
+        font-family: 'ubuntu', 'Times New Roman';
+        }             
         
         nav{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
-            margin-left: 64px;
-            margin-right: 64px;
+            margin-left: 4rem;
+            margin-right: 4rem;
             align-items: center;
-            padding-top: 0.3rem;                                             
+            padding-top: 0.6rem;                                             
         }
 
         ul{
@@ -47,45 +46,57 @@
             cursor: pointer;            
         }
 
-        .line{
-            border:solid, 1px, white;
-        }  
         .divAbout{
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin-left: 64px;
-            margin-right: 64px;
-            margin-top: 146px;
-            justify-content: space-between;
+            margin-left: 4rem;
+            margin-right: 4rem;
+            margin-top: 7rem;
             padding: 0%;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+
         }
         .ImgProfile{
-            width: 19rem;
+            width: 21rem;
             border-radius: 100%;
         }     
         .divTextAbout{
             width: 54rem;
             color: rgb(243, 233, 233);
+            margin-right: 5rem;
             
         }
         .curriculumTitle{
             text-align: center;
             color: white;
+            font-size: 2.5rem;
         }
-        .subLine{
-            border:solid, 1px, white;
-            width: 70%;
-            }
+        
         
         .divCurriculumText{
             display: flex; 
+            flex-direction: column;
+            margin-left: 12rem;
+            margin-right: 12rem;
+        }
+        .subTitleCurriculum, .titleAbout{
+            font-weight: 700;
+            color: white;
+            font-size: 1.25rem;
+            }
+        .divDateCurriculum{
+            display: flex;
             flex-direction: row;
-            align-content: space-around;
+            color: white;
+            align-items: center;
+            
+
         }
     
-
     </style>
+    
     <body>
         <nav>
             <div class="subTitleNav">
@@ -102,33 +113,42 @@
                 <img class="iconNav"  src="/img/mdi_linkedin.png" >
             </div>
         </nav>
-        <div class="line"></div> 
+        <hr style="border:solid, 1px, white;"/>
         <div id="about" class ="divAbout" >
             <div class="divTextAbout">
                 <img class="iconAbout"src="/img/fluent_window-dev-edit-16-filled.png">
                 <h3 class="titleAbout">Seja bem vindo(a) ao meu portfólio</h3>
                 <p class="textAbout">Me chamo Manuela, tenho 26 anos formada em administração Pública e atualmente estou fazendo uma transição de carreira para a área de tecnologia. <br>Nessa página você vai conhecer um pouco mais sobre  minha caminhada profissional, minhas habilidades e os cursos que realizei ao longo desses anos.<br>
                     <br>
-                    Mas nada se compara com uma conversa one-on-one, então fique a vontade para me chamar nas redes sociais.</p>
+                    Fique a vontade para me chamar nas redes sociais.</p>
             </div>
             <div class="divAboutImg">
-                <img class="ImgProfile" src="/img/DSDSADSAD.jpeg">
+                <img class="ImgProfile" src="/img/DSDSADSAD.jpeg" alt="Manuela Pereia Lange">
             </div>
         </div>
-        <h2 class="curriculumTitle" id="curriculum">Currículo</h2>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <h2 class="curriculumTitle" id="curriculum">Currículo</h2>
+            
+        </div>
         <div class="divCurriculum">
-            <div class="subLine"></div>
-            <div class="divCurriculumText">
-                <h5 class="subTitleCurriculum">Analista de planejamento estratégico</h5>
-                <p style="background-color: rgba(238, 238, 238, 1);padding:3px; border-radius: 5%;"><strong>Atualmente</strong></p>
+            <hr style="text-align: center; color: white; width: 71rem;"/>
+            <div class="divCurriculumText">                
+                    <p class="subTitleCurriculum">Analista de planejamento estratégico</p>                
+                <div class="divDateCurriculum">
+                    <img style="width: 2.5rem; height: 2.5rem; margin-right: 0.5rem;" src="./img/mdi_github.png"/>
+                    <p >12/08/2023 - <strong>Atualmente</strong></p>
+                </div>
+                <p>Sesc</p>
+                <P>Função</P>
+                
             </div>
             <div>
-                <img src="">
-                <p>data</p>
+                <img src>
+                <p style="color: aliceblue;">data</p>
             </div>
             <div>
-                <p></p>
-                <p></p>
+                <p style="color: aliceblue;">Hello world</p>
+                <p style="color: aliceblue;">Hello world</p>
             </div>
             
 
