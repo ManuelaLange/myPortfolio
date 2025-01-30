@@ -1,0 +1,110 @@
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/StyleCards.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+.StyleCards_card__XH1IF{
+    background-color:#4b556387;
+    color:white;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #F97316;
+    border-radius:1rem ;
+    transition: transform 0.2s ease;
+}
+.StyleCards_card__XH1IF:hover{
+    box-shadow: 0 0.5em 3em #F97316;
+  transform: translateY(-0.8em);
+
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/ToolsCard.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.ToolsCard_tool___M7Ui {
+    width: -moz-max-content;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    animation: ToolsCard_appear__mfBBu linear;
+    animation-timeline: view(70% auto);
+  }
+  @keyframes ToolsCard_appear__mfBBu {
+from {
+    opacity:0;
+    transform:scale(0.5);
+    }
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+  }
+  
+/*!***********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[5].use[3]!./src/app/components/StyleCube.module.css ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************/
+.StyleCube_scene__7H71P {
+  width: 240px;  /* Ajustado para caber o cubo maior */
+  height: 240px;  /* Mesmo tamanho do cubo */
+  perspective: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  }
+  
+  
+  .StyleCube_face__YR28x {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap; /* Organiza os pequenos cubos em linhas */
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+  /* Cubos pequenos */
+  .StyleCube_smallCube__k2pyq {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transform-style: preserve-3d;
+    /* margin: 5px; */
+    animation: StyleCube_rotateSmallCube__kFNxW 3s infinite linear;
+    flex-wrap: wrap; /* Organiza os pequenos cubos em linhas */
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /* Faces dos cubos pequenos */
+.StyleCube_smallCubeFace__DlHzq {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(208, 208, 208, 0); /* Azul translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Posições das faces dos cubos pequenos */
+.StyleCube_front__9pWGc  { transform: rotateY(0deg) translateZ(35px); }
+.StyleCube_back__LH9f6   { transform: rotateY(180deg) translateZ(35px); }
+.StyleCube_left__0e3X3   { transform: rotateY(-90deg) translateZ(35px); }
+.StyleCube_right__6NgbN  { transform: rotateY(90deg) translateZ(35px); }
+.StyleCube_top__erz9V    { transform: rotateX(90deg) translateZ(35px); }
+.StyleCube_bottom__wbX7a { transform: rotateX(-90deg) translateZ(35px); }
+
+  /* Animações */
+  @keyframes StyleCube_rotateCube__OZyx4 {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  
+  @keyframes StyleCube_rotateSmallCube__kFNxW {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }

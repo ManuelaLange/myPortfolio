@@ -1,0 +1,66 @@
+.scene {
+  width: 240px;  /* Ajustado para caber o cubo maior */
+  height: 240px;  /* Mesmo tamanho do cubo */
+  perspective: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+
+  }
+  
+  
+  .face {
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    display: flex;
+    flex-wrap: wrap; /* Organiza os pequenos cubos em linhas */
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+
+  /* Cubos pequenos */
+  .smallCube {
+    width: 70px;
+    height: 70px;
+    position: relative;
+    transform-style: preserve-3d;
+    /* margin: 5px; */
+    animation: rotateSmallCube 3s infinite linear;
+    flex-wrap: wrap; /* Organiza os pequenos cubos em linhas */
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /* Faces dos cubos pequenos */
+.smallCubeFace {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(208, 208, 208, 0); /* Azul translúcido */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Posições das faces dos cubos pequenos */
+.front  { transform: rotateY(0deg) translateZ(35px); }
+.back   { transform: rotateY(180deg) translateZ(35px); }
+.left   { transform: rotateY(-90deg) translateZ(35px); }
+.right  { transform: rotateY(90deg) translateZ(35px); }
+.top    { transform: rotateX(90deg) translateZ(35px); }
+.bottom { transform: rotateX(-90deg) translateZ(35px); }
+
+  /* Animações */
+  @keyframes rotateCube {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+  
+  @keyframes rotateSmallCube {
+    0%   { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }

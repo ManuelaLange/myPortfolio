@@ -1,0 +1,14 @@
+.card{
+    background-color:#4b556387;
+    color:white;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #F97316;
+    border-radius:1rem ;
+    transition: transform 0.2s ease;
+}
+.card:hover{
+    box-shadow: 0 0.5em 3em #F97316;
+  transform: translateY(-0.8em);
+
+}
